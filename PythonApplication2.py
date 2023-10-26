@@ -11,7 +11,7 @@ def branchSums(root):
 
         current_sum += node.value
 
-        # Перевіряємо, чи вузол є лівим листком
+        # ГЏГҐГ°ГҐГўВіГ°ГїВєГ¬Г®, Г·ГЁ ГўГіГ§Г®Г« Вє Г«ВіГўГЁГ¬ Г«ГЁГ±ГІГЄГ®Г¬
         if node.left is None and node.right is None:
             return current_sum
 
@@ -22,13 +22,12 @@ def branchSums(root):
 
     return calculate_branch_sums(root, 0)
 
-# Створюємо бінарне дерево для тестування
+
 root = BinaryTree(3)
 root.left = BinaryTree(9)
 root.right = BinaryTree(20)
 root.right.left = BinaryTree(15)
 root.right.right = BinaryTree(7)
 
-# Викликаємо функцію для знаходження суми лівих листків та виводимо результат
 result = branchSums(root)
 print(result)
